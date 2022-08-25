@@ -11,6 +11,10 @@ async function get_weatherdata(){
             "headers": {
             }
             });
+    if (!response.ok) {
+        console.error("Hiba:" + response.status);
+        return;
+    }
     const weatherdata = await
         response.json();
     console.log(weatherdata);
