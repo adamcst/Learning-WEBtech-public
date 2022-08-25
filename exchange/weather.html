@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
+</head>
+<body>
+<div class="header">
+	<div class="title_header">discordlearning</div>
+</div>
+<div class="navbar_top">
+	<div class="title_navbar">Időjárás</div>
+	<a href="javascript:menu_3bar();" class="button_3bar"></a>
+</div>
+<div class="menu_3bar">
+	<a href="index.html">Kezdőlap</a>
+	<a href="exchange.html">Valutaváltó</a>
+	<a href="weather.html">Időjárás</a>
+	<a href="#about">Információ</a>
+</div>
+<div class="content_main">
+<form>
+<div class="weather" id="form">
+	<label for="location">Hely:</label>
+	<input type="text" name="location" id="location">
+	<button type="button" id="get_weather" onclick="get_weatherdata()">></button>
+</div>
+</form>
+<div class="weather" id="weather_result">
+	<label for="city">Hely:</label>
+	<div name="city" id="city"></div>
+	<label for="temperature">Hőmérséklet:</label>
+	<div name="temperature" id="temperature"></div>
+	<label for="rain">Csapadék:</label>
+	<div name="rain" id="rain"></div>
+</div>
+</div>
+</body>
+</html>

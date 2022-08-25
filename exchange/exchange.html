@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
+</head>
+<body>
+<div class="header">
+	<div class="title_header">discordlearning</div>
+</div>
+<div class="navbar_top">
+	<div class="title_navbar">Valutaváltó</div>
+	<a href="javascript:menu_3bar();" class="button_3bar"></a>
+</div>
+<div class="menu_3bar">
+	<a href="index.html">Kezdőlap</a>
+	<a href="exchange.html">Valutaváltó</a>
+	<a href="weather.html">Időjárás</a>
+	<a href="#about">Információ</a>
+</div>
+<div class="content_main">
+<form>
+<div class="exchange" id="source">
+	<label for="qty_source" class="label_textbox">From:</label>
+	<input type="text" name="qty_source" id="qty_source">
+	<select class="currency_selector" id="currency_selector_source">
+	</select>
+</div>
+<input type="button" class="button_swap">
+<div class="exchange" id="to">
+	<label for="qty_target" class="label_textbox">To:</label>
+	<input type="text" name="qty_target" id="qty_target">
+	<select class="currency_selector" id="currency_selector_target">
+	</select>
+</div>
+</form>
+</div>
+</body>
+</html>

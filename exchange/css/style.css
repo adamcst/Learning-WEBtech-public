@@ -1,0 +1,60 @@
+.header {
+	display: block;
+	clear: both;
+	float: none;
+	height: min-content;
+	width: auto;
+	background: purple;
+	color: white;
+	font-size: 20pt;
+	text-align: center;
+}
+
+.title_header {
+	display: inline;
+}
+
+.title_navbar {
+	display: inline;
+}
+
+.navbar_top {
+	clear: both;
+	float: none;
+	font-size: 18pt;
+	background-color: plum;
+	min-height: 40px;
+}
+
+.button_3bar {
+	display: block;
+	float: right;
+	clear: none;
+	min-height: 40px;
+	min-width: 40px;
+	background-color: blueviolet;
+	border: 0px;
+	text-align: center;
+	
+}
+
+.menu_3bar {
+	display: none;
+	float: right;
+	clear: both;
+	width: 100%;
+}
+
+.menu_3bar a {
+	display: block;
+	background-color: cyan;
+	font-size: 18pt;
+	width: 100%;
+}
+
+.content_main {
+	margin-top: 10px;
+	min-width: auto;
+	clear:both;
+	text-align: center;
+}
