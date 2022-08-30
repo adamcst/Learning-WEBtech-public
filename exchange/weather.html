@@ -9,8 +9,15 @@
 	<div class="title_header">discordlearning</div>
 </div>
 <div class="navbar_top">
+	<form action="javascript:get_weatherdata()">
+		<div id="set_location">
+			<input type="text" id="location" value="Hely">
+			<button type="button" id="get_weather" onclick="get_weatherdata()">></button>
+			<!--<label for="city">Hely:</label>-->
+		</div>
+	</form>
 	<div class="title_navbar">Időjárás</div>
-	<a href="javascript:menu_3bar();" class="button_3bar"></a>
+	<button onclick="menu_3bar();" class="button_3bar">
 </div>
 <div class="menu_3bar">
 	<a href="index.html">Kezdőlap</a>
@@ -19,20 +26,16 @@
 	<a href="#about">Információ</a>
 </div>
 <div class="content_main">
-<form>
-<div class="weather" id="form">
-	<label for="location">Hely:</label>
-	<input type="text" name="location" id="location">
-	<button type="button" id="get_weather" onclick="get_weatherdata()">></button>
-</div>
-</form>
-<div class="weather" id="weather_result">
-	<label for="city">Hely:</label>
-	<div name="city" id="city"></div>
+<label for="current_weather">Jelenlegi időjárás</label>
+<div id="current_weather">
 	<label for="temperature">Hőmérséklet:</label>
-	<div name="temperature" id="temperature"></div>
+	<div id="temperature"></div>
 	<label for="rain">Csapadék:</label>
-	<div name="rain" id="rain"></div>
+	<div id="rain"></div>
+	<label for="cloud">Felhőzet:</label>
+	<div id="cloud"></div>
+</div>
+<div id="forecast">
 </div>
 </div>
 </body>
