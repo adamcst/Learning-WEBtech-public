@@ -1,60 +1,118 @@
 .header {
-	display: block;
-	clear: both;
-	float: none;
-	height: min-content;
-	width: auto;
-	background: purple;
-	color: white;
-	font-size: 20pt;
-	text-align: center;
+  display: block;
+  clear: both;
+  float: none;
+  height: min-content;
+  width: auto;
+  background: purple;
+  color: white;
+  font-size: 20pt;
+  text-align: center;
 }
 
 .title_header {
-	display: inline;
+  display: block;
 }
 
 .title_navbar {
-	display: inline;
+  display: block;
+  font-size: 18pt;
+  position: absolute;
+  left: 50%;
+  float: right;
+  text-align: center;
+}
+
+.navbar_top form {
+	display: block;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+#set_location * {
+	float: left;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+}
+
+#set_location button {
+	height: 40px;
+	width: 40px;
+}
+
+#set_location input {
+	height: 38px;
+	margin: 1px;
 }
 
 .navbar_top {
-	clear: both;
-	float: none;
-	font-size: 18pt;
-	background-color: plum;
-	min-height: 40px;
+  clear: both;
+  width: 100%;
+  background-color: plum;
+  min-height: 40px;
 }
 
 .button_3bar {
-	display: block;
-	float: right;
-	clear: none;
-	min-height: 40px;
-	min-width: 40px;
-	background-color: blueviolet;
-	border: 0px;
-	text-align: center;
-	
+  display: block;
+  float: right;
+  clear: none;
+  min-height: 40px;
+  min-width: 40px;
+  background-color: blueviolet;
+  border: 0px;
+  text-align: center;
 }
 
 .menu_3bar {
-	display: none;
-	float: right;
-	clear: both;
-	width: 100%;
+  display: none;
+  float: right;
+  clear: both;
+  width: 100%;
 }
 
 .menu_3bar a {
-	display: block;
-	background-color: cyan;
-	font-size: 18pt;
-	width: 100%;
+  display: block;
+  background-color: cyan;
+  font-size: 18pt;
+  width: 100%;
 }
 
 .content_main {
-	margin-top: 10px;
-	min-width: auto;
+  margin-top: 10px;
+  min-width: auto;
+  clear: both;
+}
+
+label[for="current_weather"] {
+	display: inline;
+	left:50%;
+	position: absolute;
 	clear:both;
-	text-align: center;
+}
+
+#set_location {
+	display:block;
+	float: left;
+}
+
+#current_weather {
+	display: block;
+	clear: both;
+	position: absolute;
+	top: 120px;
+}
+
+#current_weather label {
+  display: inline;
+  float: left;
+  clear: left;
+}
+
+#current_weather div {
+  display: inline;
+  float: left;
+  clear: left;
 }
