@@ -1,3 +1,5 @@
+
+
 function menu_3bar() {
   let m = document.querySelector(".menu_3bar");
   m.style.display === "block"
@@ -6,8 +8,9 @@ function menu_3bar() {
 }
 
 async function get_weatherdata() {
-  const location = document.getElementById("location").value;
-  let response, weatherdata;
+    let response, weatherdata, location;
+    location = document.getElementById("location").value;
+  
   try {
     response = await fetch(
       "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/" +
@@ -24,7 +27,11 @@ async function get_weatherdata() {
     return;
   }
   console.log(weatherdata);
-  document.querySelector("#set_location input").value = "";
+
+  fill_currentweather();
+
+  function fill_currentweather(){
+    document.querySelector("#set_location input").value = "";
   document.querySelector(".title_navbar").innerHTML = weatherdata.address + " - időjárása";
   document.querySelector("#temperature").innerHTML =
     weatherdata.currentConditions.temp + "°C";
@@ -32,4 +39,6 @@ async function get_weatherdata() {
     weatherdata.currentConditions.precip + "mm";
   document.querySelector("#cloud").innerHTML =
     weatherdata.currentConditions.cloudcover + "%";
+  }
+
 }

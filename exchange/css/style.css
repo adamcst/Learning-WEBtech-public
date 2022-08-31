@@ -84,12 +84,11 @@
   margin-top: 10px;
   min-width: auto;
   clear: both;
+  text-align: center;
 }
 
 label[for="current_weather"] {
-	display: inline;
-	left:50%;
-	position: absolute;
+	display: block;
 	clear:both;
 }
 
@@ -98,21 +97,35 @@ label[for="current_weather"] {
 	float: left;
 }
 
+#current_weather label {
+	display: block;
+	float: left;
+	clear: both;
+}
+
 #current_weather {
 	display: block;
 	clear: both;
-	position: absolute;
-	top: 120px;
-}
-
-#current_weather label {
-  display: inline;
-  float: left;
-  clear: left;
 }
 
 #current_weather div {
-  display: inline;
+  display: block;
   float: left;
-  clear: left;
+  position: sticky;
+  left: 100px;
+}
+
+label[for="forecast"] {
+	display: block;
+	clear: both;
+}
+
+#forecast {
+	display: block;
+	clear: both;
+}
+
+.weekday {
+	display: block;
+	float: left;
 }
